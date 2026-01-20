@@ -1,0 +1,23 @@
+{
+  "io": {
+    "input_file": "example_data/input.csv",
+    "output_file": "example_data/output.csv"
+  },
+  "csv_structure": {
+    "input_url_column": "image_link",
+    "output_lifestyle": "lifestyle_images",
+    "output_product": "product_images"
+  },
+  "generation": {
+    "suffixes": [
+      "_F.jpg", "_B.jpg", "_SIDE.jpg"
+    ]
+  },
+  "vision_model": {
+    "name": "openai/clip-vit-base-patch32",
+    "labels": [
+      "white background product shot",
+      "outdoor lifestyle photography"
+    ]
+  }
+}
